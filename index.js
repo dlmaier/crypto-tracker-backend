@@ -74,3 +74,7 @@ app.post("/api/wallets", (req, res) => {
 
 // Start server
 app.listen(3001, () => console.log("Server running on http://localhost:3001"));
+app.get('/', (req, res) => {
+  res.json({ message: 'Backend is working' });
+});
+
