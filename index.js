@@ -72,11 +72,15 @@ app.post("/api/wallets", (req, res) => {
     });
 });
 
-// Start server
-app.listen(3001, () => console.log("Server running on http://localhost:3001"));
-
+// Define the root route before starting the server
 app.get('/', (req, res) => {
   res.send('Backend is working');
 });
+
+// Start the server
+app.listen(3001, () => console.log("Server running on http://localhost:3001"));
+
+
+
 
 
